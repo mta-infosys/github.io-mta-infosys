@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-  <html>
-<head>
+<html><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}.image {
+   
+    -webkit-animation:spin 10s linear infinite;
+    -moz-animation:spin 10s linear infinite;
+    animation:spin 10s linear infinite;
+   animation-direction: alternate;
+}
+  .moo:hover{
+  -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+ -webkit-box-shadow: 0px 0px 30px 0px rgb(152, 186, 242);
+-moz-box-shadow:    0px 0px 30px 0px rgb(152, 186, 242);
+box-shadow:         0px 0px 30px 0px rgb(152, 186, 242);
+  }
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }</style>
   <title>מערכות מידע</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
    <script>
@@ -21,10 +37,10 @@
   </head>
 <body bgcolor="#E6E6FA">
   <div class="container" align="center">
-  <button type="button" class="btn btn-info btn-lg" data-toggle="collapse" data-target="#demo">לפתיחת האתר</button>
-  <div id="demo" class="collapse">
-    <p><a href="/personal.html"><img style="center" src="/personal.png" title="תיקיות אישיות" alt="" width="250" height="250" /></a></p>
-    <p><a href="/math.html"><img style="left" src="/doc.jpg" title="מתמטיקה" alt="" width="285" height="248"></a><a href="/binsky.html"><img style="right;" src="/binsky.png" title="מבני נתונים" alt="" width="300" height="260"></a>&nbsp;</p>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="collapse" data-target="#demo" aria-expanded="true">לפתיחת האתר</button>
+  <div id="demo" class="collapse in" aria-expanded="true">
+    <p><a href="/personal.html"><img style="center" src="/personal.png" title="תיקיות אישיות" alt="" width="250" height="250" class="image"></a></p>
+    <p><a href="/math.html"><img style="left" src="/doc.jpg" title="מתמטיקה" alt="" width="285" height="248" class="moo"></a><a href="/binsky.html"><img style="right;" src="/binsky.png" title="מבני נתונים" alt="" width="300" height="260" class="moo"></a>&nbsp;</p>
   </div>
 </div> 
   
@@ -33,5 +49,6 @@
   <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    </body>
- </html>
+    
+ 
+</body></html>
